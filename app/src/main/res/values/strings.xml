@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GCMS</string>
+    <string name="title_activity_maps">GCMS</string>
+    <string name="ip">192.168.8.100</string>
+    <string name="title_activity_edit_cylinder">EditCylinder</string>
+
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main_interface"
+    android:layout_height="50dp"
+    android:layout_width="match_parent">
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:orderInCategory="300"
+        android:title="Setting"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/home"
+        android:orderInCategory="301"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/tool_bar" android:id="@+id/tool_bar"/>
+
+
+    <LinearLayout android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent" android:padding="20dp" android:background="@drawable/background">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/ID" android:padding="10dp" android:background="@color/views_background" tools:ignore="RtlCompat" android:textSize="16sp" android:textColorHint="@color/grey" android:textColor="@color/darker_grey" android:textAlignment="textStart" android:singleLine="true" android:text="رقم الأسطوانة: " android:gravity="center_vertical" android:ems="10" android:drawableRight="@drawable/cylinder" android:drawablePadding="8dp" android:focusable="false" android:layout_marginTop="8dp"/>
+
+        <View android:layout_height="1px" android:layout_width="fill_parent" android:background="@color/white_greyish"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/NAME" android:padding="10dp" android:background="@color/views_background" tools:ignore="RtlCompat" android:textSize="16sp" android:textColorHint="@color/grey" android:textColor="@color/darker_grey" android:textAlignment="textStart" android:singleLine="true" android:text="اسم الأسطوانة: " android:gravity="center_vertical" android:ems="10" android:drawableRight="@drawable/cylinder" android:drawablePadding="8dp" android:focusable="false" android:layout_marginTop="8dp" android:inputType="textPersonName"/>
+
+    <View android:layout_height="1px" android:layout_width="fill_parent" android:background="@color/white_greyish"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/TYPE" android:padding="10dp" android:background="@color/views_background" tools:ignore="RtlCompat" android:textSize="16sp" android:textColorHint="@color/grey" android:textColor="@color/darker_grey" android:textAlignment="textStart" android:singleLine="true" android:text=" نوع الأسطوانة:" android:gravity="center_vertical" android:ems="10" android:drawableRight="@drawable/cylinder" android:drawablePadding="8dp" android:focusable="false" android:layout_marginTop="8dp" android:inputType="textPersonName"/>
+
+    <View android:layout_height="1px" android:layout_width="fill_parent" android:background="@color/white_greyish"/>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/Amount" android:padding="10dp" android:background="@color/views_background" tools:ignore="RtlCompat" android:textSize="16sp" android:textColorHint="@color/grey" android:textColor="@color/darker_grey" android:textAlignment="textStart" android:singleLine="true" android:text="نسبة الغاز:" android:gravity="center_vertical" android:ems="10" android:drawableRight="@drawable/cylinder" android:drawablePadding="8dp" android:focusable="false" android:layout_marginTop="8dp" android:layout_weight="1"/>
+
+    <EditText android:layout_height="50dp" android:layout_width="fill_parent" android:id="@+id/Lock" android:padding="10dp" android:background="@color/views_background" tools:ignore="RtlCompat" android:textSize="16sp" android:textColorHint="@color/grey" android:textColor="@color/darker_grey" android:textAlignment="textStart" android:singleLine="true" android:text=" مغلقة" android:gravity="center_vertical" android:ems="10" android:drawableRight="@drawable/lock" android:drawablePadding="4dp" android:focusable="false" android:inputType="textPersonName" android:layout_weight="1" android:layout_marginBottom="8dp"/>
+
+</LinearLayout>
+
+    <View android:layout_height="1px" android:layout_width="fill_parent" android:background="@color/white_greyish"/>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/Leak" android:padding="10dp" android:background="@color/views_background" tools:ignore="RtlCompat" android:textSize="16sp" android:textColorHint="@color/grey" android:textColor="@color/darker_grey" android:textAlignment="textStart" android:singleLine="true" android:text=" حالة التسرب:" android:gravity="center_vertical" android:ems="10" android:drawableRight="@drawable/leakgas" android:drawablePadding="8dp" android:focusable="false" android:layout_marginTop="8dp" android:inputType="textPersonName" android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@color/pink"
+            android:backgroundTint="@color/pink"
+            android:text="تعديل"
+            android:onClick="EditCylinder"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@color/pink"
+            android:backgroundTint="@color/pink"
+            android:text="حذف"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+</LinearLayout>
+
+        <Button
+            android:id="@+id/stat"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@color/pink"
+            android:layout_marginTop="95dp"
+            android:layout_marginRight="190dp"
+            android:backgroundTint="@color/pink"
+            android:text="احصائيات"
+            android:onClick="stat"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/logOutBtn"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:background="@color/pink"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="190dp"
+            android:backgroundTint="@color/pink"
+            android:text="تسجيل الخروج"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+</LinearLayout>
+
+</LinearLayout>

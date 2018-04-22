@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <android.support.constraint.ConstraintLayout tools:context="com.example.lenovo.maps.loginPage" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/wall1">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="356dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="ادخل البريد الالكتروني"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/passText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/passText"
+            android:layout_width="356dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="2"
+            android:ems="10"
+            android:gravity="right"
+            android:hint="ادخل الرقم السري"
+
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="3"
+            android:background="@color/pink"
+            android:backgroundTint="@color/pink"
+
+            android:text="تسجيل الدخول"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@+id/forget_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="327dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="4"
+            android:onClick="forgotPass"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="هل نسيت كلمة المرور؟"
+            android:textColor="@android:color/holo_blue_dark"
+            app:layout_constraintBottom_toTopOf="@+id/textView10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.394"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/pink"
+        android:backgroundTint="@color/pink"
+
+
+        android:onClick="Person_Type"
+
+        android:text=" حساب جديد"
+
+        android:textColor="@color/colorPrimaryDark"
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>
